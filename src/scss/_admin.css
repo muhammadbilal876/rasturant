@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    margin-bottom: 0;
+}
+.admin-cart .col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+.admin-cart .card{
+    color: white;
+}
+.admin-cart .card i{
+    font-size: 30px;
+    /* background-color: #cce5ff;
+    color: #66b0ff; */
+    padding: 10px;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+@import './scss/_hero.css';
+@import './scss/_product.css';
+@import './scss/_footer.css';
+@import './scss/_about.css';
+@import './scss/_contact.css';
+@import './scss/_register.css';
+@import './scss/_checkout.css';
+@import './scss/_userProfile.css';
+@import './scss/_admin.css';
+body{
+    overflow-x: hidden;
+}

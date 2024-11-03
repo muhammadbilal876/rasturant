@@ -1,0 +1,117 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.register-card {
+    background-color: #ffffff;
+    padding: 50px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.register-title {
+    font-size: 1.8rem;
+    color: #182848;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.auth-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.auth-form-group label {
+    color: #182848;
+    font-weight: 500;
+}
+
+.auth-form-group .form-control {
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f1f3f5;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.auth-form-group .form-control:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 108, 255, 0.5);
+    background-color: #e9f2ff;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+    background: linear-gradient(90deg, #182848, #4b6cb7);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-prompt {
+    text-align: center;
+    margin-top: 1rem;
+    color: #555;
+}
+
+.login-link {
+    color: #4b6cb7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width: 440px) {
+.register-container {
+    padding: 10;
+}
+.register-card {
+    padding: 20px;
+}
+.register-title {
+    font-size: 1.4rem;
+}
+}
+
+
+@media(max-width: 330px) {
+    .register-container {
+        padding: 9px;
+    }
+    .register-card {
+        padding: 8px;
+    }
+    .register-title {
+        font-size: 1.1rem;
+    }
+    .login-prompt {
+        font-size: 15px;
+    }
+}

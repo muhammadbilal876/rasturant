@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #fff;
+}
+
+.pic {
+  height: auto;
+  width: 400px;
+  border-radius: 12px;
+}
+
+.about {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text {
+  width: 540px;
+}
+
+.text h2 {
+  color: #333;
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text h5 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.text h5 span {
+  color: #4070f4;
+}
+
+.text p {
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.data {
+  margin-top: 30px;
+}
+
+.hire {
+  font-size: 18px;
+  background: #027b9a;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.hire:hover {
+  background: #004658;
+}
+@media (max-width: 1105px) {
+    .about h2{
+        font-size: 60px;
+    }
+    .about h5{
+        font-size: 20px;
+    }
+    .about p{
+        font-size: 16px;
+    }
+    
+}
+@media (max-width: 1042px) {
+    .about{
+        max-width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/* @media (max-width: 1000px) {
+    .about{
+       grid-template-columns: 1fr;
+    }
+    .right{
+        top: 0;
+    }
+    .about .pic{
+       margin-top: 300px;
+    }
+}
+ */
+
+
+
+ @media (max-width: 1000px) {
+  .about {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+  .left {
+    order: 2; 
+    margin: 20px 0;
+  }
+  .right {
+    order: 1; 
+    margin-bottom: 20px;
+  }
+  .pic {
+   display: none;
+  }
+}
+
+@media (max-width: 645px) {
+    .about{
+        padding: 0;
+    }
+    .about h2{
+        font-size: 45px;
+    }
+    .about h5{
+        font-size: 16px;
+    }
+    .about p{
+        font-size: 12px;
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .right{
+        margin-left: -30px;
+        padding-right: 20px;
+    }
+    .right p{
+        width: 70%;
+    }
+}
+
+@media (max-width: 380px) {
+    .right{
+        text-align: left;
+        margin-left: -25px;
+        padding-right: -10px;
+    }
+    .right p{
+        width: 50%;
+    }
+}
+@media (max-width: 300px) {
+    .right{
+        text-align: left;
+        margin-left: -30px;
+        padding-right: -5px;
+    }
+    .right p{
+        width: 40%;
+    }
+}
